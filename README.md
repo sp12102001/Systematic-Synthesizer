@@ -9,7 +9,6 @@ The application is built using Python, leveraging libraries such as nltk for NLP
 The application integrates with scientific literature databases through their APIs, such as the Semantic Scholar API, to automate the search and retrieval of relevant studies
 ML algorithms, including those from the sklearn library, are used for screening studies and synthesizing data The application streamlines the creation of systematic reviews, from formulating research questions to synthesizing findings, ready for publication.
 
-
 ## Content blocks
 ### Generating Inclusion and Exclusion Criteria
 This content block uses natural language processing to identify key terms from the user's research question and formulates inclusion and exclusion criteria for the systematic review. It filters out irrelevant words and focuses on unique keywords, excluding studies that do not meet these criteria and a specified year range.
@@ -24,7 +23,7 @@ The "Generating Publication Sections" content block is responsible for creating 
 
 ## NextJS framework
 
-NextJS is included automatically in the website folder for type Headless CMS. [TailwindCSS](https://tailwindcss.com/) and [graphql-ts-client](https://github.com/babyfish-ct/graphql-ts-client) are set up within the project.
+NextJS is included for type Headless CMS. [TailwindCSS](https://tailwindcss.com/) and [graphql-ts-client](https://github.com/babyfish-ct/graphql-ts-client) are set up within the project.
 
 ### Before running it for the first time
 
@@ -37,12 +36,11 @@ The `npm run start` command starts Contember Admin and NextJS, which runs on `lo
 Before each launch, `npm run codegen` will run the command to generate Typescript definition for GraphQL in the `/website/api/__generated` folder.
 
 ### Project structure
-
--   `api` - folder contains `graphQLExecutor.ts` file, which provides the call to the Contember GraphQL endpoint.
-    -   `__generated` - ⚠️ Do not edit this folder ⚠️ . This folder contains automatically generated files for the GraphQL client. The structure should be regenerated with `npm run codegen` after changing the Contember model and performing the migration.
+-   `api` - folder contains `graphQLExecutor.ts` file, which provides the call to the  GraphQL endpoint.
+    -   `__generated` - ⚠️ Do not edit this folder ⚠️ . This folder contains automatically generated files for the GraphQL client. The structure should be regenerated with `npm run codegen` after changing the model and performing the migration.
     -   `queries` -  if we have identified one of the entities as a content entity during the generation process, you will find a file with a fully compiled query for that entity in this folder.
 -   `app`
-    -   `entity_name/[id]/page.tsx` - contains a basic rendering of the page structure based on the generated GraphQL call, this is the file you will want to start editing after publishing your first Contember post.
+    -   `entity_name/[id]/page.tsx` - contains a basic rendering of the page structure based on the generated GraphQL call, this is the file you will want to start editing after publishing first post.
 -   `components`
     -   `[RichTextRenderer.tsx](https://docs.contember.com/reference/admin/api/v1.2/Content%20rendering/RichTextRenderer/)` - component for rendering the Content entity
 -   `public` - static assets
