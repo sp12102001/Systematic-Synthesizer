@@ -1,65 +1,15 @@
 # Systematic Synthesizer
 
-## The purpose of your application 
- To create a detailed explanation of a 1-page web application that writes a full systematic review ready to publish based on user input, we need to consider the integration of various components and APIs as outlined in the provided code snippets and descriptions. The application aims to automate the systematic review process, leveraging natural language processing (NLP), machine learning (ML), and data extraction techniques to streamline research design, literature review, and data synthesis.
-The web application is designed to assist researchers in conducting systematic reviews by automating several steps of the process, including formulating research questions, defining inclusion and exclusion criteria, searching for relevant studies, selecting studies, extracting data, and synthesizing findings. This automation is achieved through the use of NLP and ML algorithms, alongside APIs for accessing scientific literature.
-Core Components and Workflow
-User Query Understanding and Personalization:
-Users input their initial research question, which is then refined using the PICO framework to ensure clarity and focus
+## The purpose of the application 
+The application aims to automate the systematic review process, leveraging natural language processing (NLP), machine learning (ML), and data extraction techniques to streamline research design, literature review, and data synthesis. The web application is designed to assist researchers by automating several steps of the process, including formulating research questions, defining inclusion and exclusion criteria, searching for relevant studies, selecting studies, extracting data, and synthesizing findings. This automation is achieved through the use of NLP and ML algorithms, alongside APIs for accessing scientific literature.
 
-.
-The application uses NLP techniques to analyze and refine the research question, ensuring it is well-defined and structured for systematic review
-
-Review Existing Database:
-The application automates the literature search process by querying scientific databases through APIs like Semantic Scholar
-
-.
-It reviews existing literature to identify gaps in knowledge and avoid duplication of efforts
-1
-.
-Design the Intervention:
-Based on the refined research question and the review of existing literature, the application designs a research intervention
-1
-.
-This includes selecting appropriate methodologies, variables, and defining inclusion and exclusion criteria using NLP techniques
-1
-.
-Offer Implementation Steps:
-The application outlines ethical guidelines and provides a step-by-step guide for conducting the research, including data collection and analysis methods
-
-.
-It also suggests resources and tools needed for the research project
-1
-.
-Automated Literature Search and Selection:
-Utilizing APIs from databases like Semantic Scholar, the application searches for relevant studies based on the defined criteria
-
-.
-It employs ML algorithms to screen titles and abstracts, selecting studies that meet the inclusion criteria
-1
-.
-Data Extraction and Synthesis:
-The application extracts relevant data from selected studies using NLP techniques
-1
-.
-It performs qualitative and quantitative synthesis, including meta-analysis, to summarize the findings of the review
-1
-.
-Technical Implementation
-The application is built using Python, leveraging libraries such as nltk for NLP tasks, pdfplumber for extracting text from PDFs, BeautifulSoup for HTML parsing, and spacy for advanced NLP processing
-
-.
-Itcreating the web interface, allowing users to interactively input their research question, refine it, and receive updates on the review process, but only input one question/topic for the whole process to work with.
+# Technical Implementation
+The application is built using Python, leveraging libraries such as nltk for NLP tasks, pdfplumber for extracting text from PDFs, BeautifulSoup for HTML parsing, and spacy for advanced NLP processing It creates the web interface, allowing users to interactively input their research question, refine it, and receive updates on the review process, but only input one question/topic for the whole process to work with. 
 
 The application integrates with scientific literature databases through their APIs, such as the Semantic Scholar API, to automate the search and retrieval of relevant studies
-
 ML algorithms, including those from the sklearn library, are used for screening studies and synthesizing data
-1
-.
- By integrating NLP and ML techniques with user-friendly web technologies the application streamlines the creation of systematic reviews, from formulating research questions to synthesizing findings, ready for publication.
+By integrating NLP and ML techniques with user-friendly web technologies the application streamlines the creation of systematic reviews, from formulating research questions to synthesizing findings, ready for publication.
 
-## About your application
-undefined
 
 ## Content blocks
 ### Title: Generating Inclusion and Exclusion Criteria
