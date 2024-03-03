@@ -21,7 +21,7 @@ This is responsible for the qualitative and quantitative synthesis of the extrac
 ### Generating Publication Sections
 The "Generating Publication Sections" content block is responsible for creating the different sections of the final publication-ready document. It includes functions to generate the introduction, methods, results, discussion, and conclusion sections, each populated with relevant content based on the systematic review findings.
 
-## NextJS framework
+# NextJS framework
 
 NextJS is included for type Headless CMS. [TailwindCSS](https://tailwindcss.com/) and [graphql-ts-client](https://github.com/babyfish-ct/graphql-ts-client) are set up within the project.
 
@@ -35,7 +35,7 @@ The `npm run start` command starts Contember Admin and NextJS, which runs on `lo
 
 Before each launch, `npm run codegen` will run the command to generate Typescript definition for GraphQL in the `/website/api/__generated` folder.
 
-### Project structure
+## Project structure
 -   `api` - folder contains `graphQLExecutor.ts` file, which provides the call to the  GraphQL endpoint.
     -   `__generated` - ⚠️ Do not edit this folder ⚠️ . This folder contains automatically generated files for the GraphQL client. The structure should be regenerated with `npm run codegen` after changing the model and performing the migration.
     -   `queries` -  if we have identified one of the entities as a content entity during the generation process, you will find a file with a fully compiled query for that entity in this folder.
