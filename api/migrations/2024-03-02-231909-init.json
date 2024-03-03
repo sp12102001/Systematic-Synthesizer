@@ -1,0 +1,598 @@
+{
+	"formatVersion": 4,
+	"modifications": [
+		{
+			"modification": "createEntity",
+			"entity": {
+				"primary": "id",
+				"primaryColumn": "id",
+				"tableName": "research_question",
+				"fields": {
+					"id": {
+						"name": "id",
+						"type": "Uuid",
+						"columnType": "uuid",
+						"nullable": false,
+						"columnName": "id"
+					}
+				},
+				"unique": [],
+				"indexes": [],
+				"eventLog": {
+					"enabled": true
+				},
+				"name": "ResearchQuestion"
+			}
+		},
+		{
+			"modification": "createEntity",
+			"entity": {
+				"primary": "id",
+				"primaryColumn": "id",
+				"tableName": "criteria",
+				"fields": {
+					"id": {
+						"name": "id",
+						"type": "Uuid",
+						"columnType": "uuid",
+						"nullable": false,
+						"columnName": "id"
+					}
+				},
+				"unique": [],
+				"indexes": [],
+				"eventLog": {
+					"enabled": true
+				},
+				"name": "Criteria"
+			}
+		},
+		{
+			"modification": "createEntity",
+			"entity": {
+				"primary": "id",
+				"primaryColumn": "id",
+				"tableName": "study",
+				"fields": {
+					"id": {
+						"name": "id",
+						"type": "Uuid",
+						"columnType": "uuid",
+						"nullable": false,
+						"columnName": "id"
+					}
+				},
+				"unique": [],
+				"indexes": [],
+				"eventLog": {
+					"enabled": true
+				},
+				"name": "Study"
+			}
+		},
+		{
+			"modification": "createEntity",
+			"entity": {
+				"primary": "id",
+				"primaryColumn": "id",
+				"tableName": "data_extraction",
+				"fields": {
+					"id": {
+						"name": "id",
+						"type": "Uuid",
+						"columnType": "uuid",
+						"nullable": false,
+						"columnName": "id"
+					}
+				},
+				"unique": [],
+				"indexes": [],
+				"eventLog": {
+					"enabled": true
+				},
+				"name": "DataExtraction"
+			}
+		},
+		{
+			"modification": "createEntity",
+			"entity": {
+				"primary": "id",
+				"primaryColumn": "id",
+				"tableName": "data_synthesis",
+				"fields": {
+					"id": {
+						"name": "id",
+						"type": "Uuid",
+						"columnType": "uuid",
+						"nullable": false,
+						"columnName": "id"
+					}
+				},
+				"unique": [],
+				"indexes": [],
+				"eventLog": {
+					"enabled": true
+				},
+				"name": "DataSynthesis"
+			}
+		},
+		{
+			"modification": "createEntity",
+			"entity": {
+				"primary": "id",
+				"primaryColumn": "id",
+				"tableName": "publication_section",
+				"fields": {
+					"id": {
+						"name": "id",
+						"type": "Uuid",
+						"columnType": "uuid",
+						"nullable": false,
+						"columnName": "id"
+					}
+				},
+				"unique": [],
+				"indexes": [],
+				"eventLog": {
+					"enabled": true
+				},
+				"name": "PublicationSection"
+			}
+		},
+		{
+			"modification": "createEntity",
+			"entity": {
+				"primary": "id",
+				"primaryColumn": "id",
+				"tableName": "block",
+				"fields": {
+					"id": {
+						"name": "id",
+						"type": "Uuid",
+						"columnType": "uuid",
+						"nullable": false,
+						"columnName": "id"
+					}
+				},
+				"unique": [],
+				"indexes": [],
+				"eventLog": {
+					"enabled": true
+				},
+				"name": "Block"
+			}
+		},
+		{
+			"modification": "createEntity",
+			"entity": {
+				"primary": "id",
+				"primaryColumn": "id",
+				"tableName": "block_list",
+				"fields": {
+					"id": {
+						"name": "id",
+						"type": "Uuid",
+						"columnType": "uuid",
+						"nullable": false,
+						"columnName": "id"
+					}
+				},
+				"unique": [],
+				"indexes": [],
+				"eventLog": {
+					"enabled": true
+				},
+				"name": "BlockList"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Block",
+			"field": {
+				"columnType": "integer",
+				"nullable": true,
+				"columnName": "order",
+				"name": "order",
+				"type": "Integer"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Block",
+			"field": {
+				"columnType": "text",
+				"nullable": false,
+				"columnName": "research_question",
+				"type": "String",
+				"name": "researchQuestion"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Block",
+			"field": {
+				"columnType": "text",
+				"nullable": false,
+				"columnName": "inclusion_criteria",
+				"type": "String",
+				"name": "inclusionCriteria"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Block",
+			"field": {
+				"columnType": "text",
+				"nullable": false,
+				"columnName": "exclusion_criteria",
+				"type": "String",
+				"name": "exclusionCriteria"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Block",
+			"field": {
+				"columnType": "integer",
+				"nullable": false,
+				"columnName": "year_range",
+				"type": "Integer",
+				"name": "yearRange"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Block",
+			"field": {
+				"columnType": "text",
+				"nullable": false,
+				"columnName": "user_query",
+				"type": "String",
+				"name": "userQuery"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Block",
+			"field": {
+				"columnType": "text",
+				"nullable": false,
+				"columnName": "api_key",
+				"type": "String",
+				"name": "apiKey"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Block",
+			"field": {
+				"columnType": "jsonb",
+				"nullable": false,
+				"columnName": "search_results",
+				"type": "Json",
+				"name": "searchResults"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Block",
+			"field": {
+				"columnType": "jsonb",
+				"nullable": false,
+				"columnName": "selected_studies",
+				"type": "Json",
+				"name": "selectedStudies"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Block",
+			"field": {
+				"columnType": "text",
+				"nullable": false,
+				"columnName": "title",
+				"type": "String",
+				"name": "title"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Block",
+			"field": {
+				"columnType": "text",
+				"nullable": false,
+				"columnName": "description",
+				"type": "String",
+				"name": "description"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Block",
+			"field": {
+				"columnType": "text",
+				"nullable": false,
+				"columnName": "pdf_text_extraction",
+				"type": "String",
+				"name": "pdfTextExtraction"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Block",
+			"field": {
+				"columnType": "text",
+				"nullable": false,
+				"columnName": "html_text_extraction",
+				"type": "String",
+				"name": "htmlTextExtraction"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Block",
+			"field": {
+				"columnType": "text",
+				"nullable": false,
+				"columnName": "entity_extraction",
+				"type": "String",
+				"name": "entityExtraction"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Block",
+			"field": {
+				"columnType": "jsonb",
+				"nullable": false,
+				"columnName": "structured_data_output",
+				"type": "Json",
+				"name": "structuredDataOutput"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Block",
+			"field": {
+				"columnType": "jsonb",
+				"nullable": false,
+				"columnName": "qualitative_results",
+				"type": "Json",
+				"name": "qualitativeResults"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Block",
+			"field": {
+				"columnType": "jsonb",
+				"nullable": false,
+				"columnName": "quantitative_results",
+				"type": "Json",
+				"name": "quantitativeResults"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Block",
+			"field": {
+				"columnType": "text",
+				"nullable": false,
+				"columnName": "introduction",
+				"type": "String",
+				"name": "introduction"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Block",
+			"field": {
+				"columnType": "text",
+				"nullable": false,
+				"columnName": "methods",
+				"type": "String",
+				"name": "methods"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Block",
+			"field": {
+				"columnType": "text",
+				"nullable": false,
+				"columnName": "results",
+				"type": "String",
+				"name": "results"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Block",
+			"field": {
+				"columnType": "text",
+				"nullable": false,
+				"columnName": "discussion",
+				"type": "String",
+				"name": "discussion"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Block",
+			"field": {
+				"columnType": "text",
+				"nullable": false,
+				"columnName": "conclusion",
+				"type": "String",
+				"name": "conclusion"
+			}
+		},
+		{
+			"modification": "createRelation",
+			"entityName": "ResearchQuestion",
+			"owningSide": {
+				"nullable": true,
+				"type": "OneHasOne",
+				"target": "BlockList",
+				"name": "blocks",
+				"orphanRemoval": true,
+				"inversedBy": "researchQuestion",
+				"joiningColumn": {
+					"columnName": "blocks_id",
+					"onDelete": "restrict"
+				}
+			},
+			"inverseSide": {
+				"nullable": true,
+				"type": "OneHasOne",
+				"name": "researchQuestion",
+				"target": "ResearchQuestion",
+				"ownedBy": "blocks"
+			}
+		},
+		{
+			"modification": "createRelation",
+			"entityName": "Criteria",
+			"owningSide": {
+				"nullable": true,
+				"type": "OneHasOne",
+				"target": "BlockList",
+				"name": "blocks",
+				"orphanRemoval": true,
+				"inversedBy": "criteria",
+				"joiningColumn": {
+					"columnName": "blocks_id",
+					"onDelete": "restrict"
+				}
+			},
+			"inverseSide": {
+				"nullable": true,
+				"type": "OneHasOne",
+				"name": "criteria",
+				"target": "Criteria",
+				"ownedBy": "blocks"
+			}
+		},
+		{
+			"modification": "createRelation",
+			"entityName": "Study",
+			"owningSide": {
+				"nullable": true,
+				"type": "OneHasOne",
+				"target": "BlockList",
+				"name": "blocks",
+				"orphanRemoval": true,
+				"inversedBy": "study",
+				"joiningColumn": {
+					"columnName": "blocks_id",
+					"onDelete": "restrict"
+				}
+			},
+			"inverseSide": {
+				"nullable": true,
+				"type": "OneHasOne",
+				"name": "study",
+				"target": "Study",
+				"ownedBy": "blocks"
+			}
+		},
+		{
+			"modification": "createRelation",
+			"entityName": "DataExtraction",
+			"owningSide": {
+				"nullable": true,
+				"type": "OneHasOne",
+				"target": "BlockList",
+				"name": "blocks",
+				"orphanRemoval": true,
+				"inversedBy": "dataExtraction",
+				"joiningColumn": {
+					"columnName": "blocks_id",
+					"onDelete": "restrict"
+				}
+			},
+			"inverseSide": {
+				"nullable": true,
+				"type": "OneHasOne",
+				"name": "dataExtraction",
+				"target": "DataExtraction",
+				"ownedBy": "blocks"
+			}
+		},
+		{
+			"modification": "createRelation",
+			"entityName": "DataSynthesis",
+			"owningSide": {
+				"nullable": true,
+				"type": "OneHasOne",
+				"target": "BlockList",
+				"name": "blocks",
+				"orphanRemoval": true,
+				"inversedBy": "dataSynthesis",
+				"joiningColumn": {
+					"columnName": "blocks_id",
+					"onDelete": "restrict"
+				}
+			},
+			"inverseSide": {
+				"nullable": true,
+				"type": "OneHasOne",
+				"name": "dataSynthesis",
+				"target": "DataSynthesis",
+				"ownedBy": "blocks"
+			}
+		},
+		{
+			"modification": "createRelation",
+			"entityName": "PublicationSection",
+			"owningSide": {
+				"nullable": true,
+				"type": "OneHasOne",
+				"target": "BlockList",
+				"name": "blocks",
+				"orphanRemoval": true,
+				"inversedBy": "publicationSection",
+				"joiningColumn": {
+					"columnName": "blocks_id",
+					"onDelete": "restrict"
+				}
+			},
+			"inverseSide": {
+				"nullable": true,
+				"type": "OneHasOne",
+				"name": "publicationSection",
+				"target": "PublicationSection",
+				"ownedBy": "blocks"
+			}
+		},
+		{
+			"modification": "createRelation",
+			"entityName": "Block",
+			"owningSide": {
+				"nullable": false,
+				"type": "ManyHasOne",
+				"name": "list",
+				"target": "BlockList",
+				"inversedBy": "items",
+				"joiningColumn": {
+					"columnName": "list_id",
+					"onDelete": "cascade"
+				}
+			},
+			"inverseSide": {
+				"type": "OneHasMany",
+				"name": "items",
+				"target": "Block",
+				"ownedBy": "list",
+				"orderBy": [
+					{
+						"path": [
+							"order"
+						],
+						"direction": "asc"
+					}
+				]
+			}
+		}
+	]
+}

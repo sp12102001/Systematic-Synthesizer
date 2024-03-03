@@ -1,0 +1,19 @@
+@import '@contember/admin/index.css';
+@import '@contember/brand/index.css';
+@import '@contember/layout/index.css';
+
+@tailwind components;
+@tailwind utilities;
+
+.cui-box[data-elevated] {
+	--cui-box-shadow: 0 0 1px rgba(var(--cui-color--rgb-50), 0.25), 0 1px 1em rgba(var(--cui-color--rgb-50), 0.25);
+	box-shadow: var(--cui-box-shadow);
+}
+
+.cui-box[data-elevated] .cui-label {
+	font-weight: normal;
+}
+
+.cui-box[data-elevated] .cui-field-container-body {
+	font-weight: bold;
+}
