@@ -1,4 +1,4 @@
-# Systematic Synthesizer (Not finished yet)
+# Systematic Synthesizer (In Progress)
 
 ## The purpose of the application 
 The application aims to automate the systematic review process, leveraging natural language processing (NLP), machine learning (ML), and data extraction techniques to streamline research design, literature review, and data synthesis. The web application is designed to assist researchers by automating several steps of the process, including formulating research questions, defining inclusion and exclusion criteria, searching for relevant studies, selecting studies, extracting data, and synthesizing findings. This automation is achieved through the use of NLP and ML algorithms, alongside APIs for accessing scientific literature.
